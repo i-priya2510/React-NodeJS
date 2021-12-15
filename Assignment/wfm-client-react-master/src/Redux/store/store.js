@@ -1,13 +1,12 @@
 import {combineReducers,applyMiddleware,createStore} from 'redux'
 import createSagaMiddleware from 'redux-saga'
-import { loginReducer,managerReducer } from '../reducers/reducer'
+import { loginReducer } from '../reducers/reducer'
 import { rootSaga } from '../saga/root'
 
 
 
 const appData = combineReducers({
-    loginData: loginReducer,
-    managerData:managerReducer
+    loginData: loginReducer
 })
 
 const sagaMiddleware=createSagaMiddleware()

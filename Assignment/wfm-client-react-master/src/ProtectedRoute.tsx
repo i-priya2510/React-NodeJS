@@ -3,12 +3,11 @@ import { Route, Redirect } from "react-router-dom";
 import ManagerHome from "./Managers/Home";
 import WFMHome from "./WFM/Home";
 
-// const token= localStorage.getItem("token");
-// const usertype =  localStorage.getItem("usertype")
+
 
 const ProtectedRoute = ({ children, ...rest }:any) => {
-const token= localStorage.getItem("token");
-const usertype =  localStorage.getItem("usertype")
+  const token= localStorage.getItem("token");
+  const usertype =  localStorage.getItem("usertype")
   return (
     <Route
       {...rest}
